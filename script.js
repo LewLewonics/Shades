@@ -19,7 +19,7 @@ const category5_links = [`https://listen.moe`, `https://www.spotify.com/us/`, `h
 //In order of left -> right
 const categories = ['ソーシャル','アニメ','お気に入り','プログラミング','音楽'];
                                                                           //Background Color
-const card_colors = ['#28796B','#693273','#F85845', '#F5F0B3', '#D79052', '#2B2F3D']
+const card_colors = ['#28796B','#693273','#410E1A', '#7A94AB', '#D79052', '#2B2F3D']
 //////////////////////////////////////////////////////////////////////////////////////////////
 
 let root = document.documentElement;
