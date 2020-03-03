@@ -5,9 +5,14 @@ A minimal and colorful Touhou Project start page theme.
 
 How to use
 -------------------------------
-<ol>
-  <li>Download or Clone this repository. You can find the button on the top right</li>
-  <li>Go to wherever you downloaded it right click "index.html" select open-with your browser of choice</li>
+<ol> 
+<li> create a github account and fork this repository.</li>
+<li> download <a href="https://desktop.github.com/">Github Desktop</a>, go to File/Options and Sign in with your current account.</li>
+<li> go to File/Clone repository and select the one you forked (it'll be named <i>Username/Shades</i>). </li>
+<li> click the <i>Current branch</i> tab and select <i>gh-pages</i>. Then go to Repository/Show in Explorer to customize the startpage. After modifying what you want, return to Github Desktop window and click the button <i>Commit to gh-pages</i> (you'll have to write a title in Summary before).</li>
+<li> finally, click the button <i>Push origin</i>. After 10 minutes or less, you'll be able to go to https://username.github.io/Shades/.</li>
+<li> go to your browser setting and set https://username.github.io/Shades/ as your default homepage.</li>
+<li> download the add-on <i>New Tab Override</i> (<a href="https://chrome.google.com/webstore/detail/new-tab-override/fjcmlondipcnnpmbcollgifldmajfonf?hl=en-GB">Google Chrome</a> or <a href="https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/">Firefox Mozilla</a>), go to options and select <i>current home page</i></li>
 </ol>
 
 Customize
