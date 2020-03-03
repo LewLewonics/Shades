@@ -6,7 +6,7 @@ const category1_titles = ['Youtube', 'Twitter', 'Gmail'];
 const category1_links = [`https://www.youtube.com`, `https://twitter.com`, `https://mail.google.com/mail/u/0/#inbox`];
 //Anime
 const category2_titles = ['Twist.moe', 'Anilist', 'Konachan', 'Wall Haven'];
-const category2_links = [`https://twist.moe`, ,`https://anilist.co`, `https://konachan.net`, 'https://wallhaven.cc/search?q=id:5&ref=fp'];
+const category2_links = [`https://twist.moe`, `https://anilist.co`, `https://konachan.net`, 'https://wallhaven.cc/search?q=id:5&ref=fp'];
 //Favorites
 const category3_titles = ['Online-Go', 'Reddit'];
 const category3_links = [`https://online-go.com`, `https://www.reddit.com`];
