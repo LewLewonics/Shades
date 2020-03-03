@@ -2,6 +2,7 @@
 <a href='https://lewlewonics.github.io/Shades/'>Live Version</a>
 A minimal and colorful Touhou Project start page theme.
 <img src="Thumbnail.jpg" width="100%">
+<img src='2020-03-02 20.48.32 lewlewonics.github.io 2e8b92eb0056.jpg' width='100%'>
 
 How to use
 -------------------------------
