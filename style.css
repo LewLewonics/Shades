@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Carter+One|Yeseva+One&display=swap');
+
+:root {
+    --bg: #2B2F3D;
+    --text: white;
+    --text-shadow: rgba(0,0,0,0.3);
+    --youmu: #28796B;
+    --suwako: #693273;
+    --reimu: #AD5155;
+    --marisa: #492736    ;
+    --koishi: #D79052;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: var(--bg);
+    background-size: contain;
+    background-repeat: none;
+    font-family: 'Montserrat';
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+
+button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    color: rgba(255,255,255,1);
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+  
+button:hover {
+    background-color: rgba(255,255,255,.8);
+    color: var(--bg);
+}
+
+button.cardHover {
+    display: none;
+}
+
+#welcome-message {
+    color: white;
+    font-family: 'Yeseva One';
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 4px 4px rgb(0, 0, 0, 0.3);
+}
+
+/* GENERIC CARD */
+.card {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 350px;
+    background: grey;
+    border: 3px black solid;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.front-card {
+    display:  flex;
+    /* display:  none; */
+
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    margin: 0;
+
+    transform-style: preserve-3d; /*Flip effect*/
+    transition: transform .5s;
+}
+
+.front-card .image {
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.front-card .image.blur {
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.front-card .card-title {
+    position: absolute;
+    background: rgba(0,0,0,0.3);
+    border: 3px black solid;
+    height:100px;
+    width: 100%;
+
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    transition: all .5s;
+}
+
+.front-card .card-title:hover {
+    height: inherit;
+}
+
+.front-card .card-title h3 {
+    font-size: 24px;
+    color: white;
+    text-shadow: 2px 2px rgb(0, 0, 0, 0.3);
+}
+
+/* LINKS */
+a {
+    display: block;
+    color: white;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    transition: all .2s;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* BACKGROUND CARD COLORS */
+#youmu {
+    background: var(--youmu);
+}
+
+#suwako {
+    background: var(--suwako);
+}
+
+#reimu {
+    background: var(--reimu);
+}
+
+#marisa {
+    background: var(--marisa);
+}
+
+#koishi {
+    background: var(--koishi);
+}
+
+/* SETTINGS */
+#settings {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.3);
+    display: none;
+}
+
+#settings.show {
+    display: flex;
+    text-align: center;
+}
+
+#settings #center {
+    width: 400px;
+    height: 400px;
+    background: #f3f3f3;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+#settings #center h2 {
+    text-decoration: underline;
+}
+
+/* For users on mobile */
+@media(max-width: 700px) {
+    body {
+        flex-direction: column;
+    }
+    .card {
+        width: 100vw;
+        height: 100vh;
+    }
+}
