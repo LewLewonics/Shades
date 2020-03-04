@@ -2,7 +2,7 @@
 <a href='https://lewlewonics.github.io/Shades/'>Live Version</a>
 A minimal and colorful Touhou Project start page theme.
 <img src="Thumbnail.jpg" width="100%">
-<img src='exampleBackground.jpg' width='100%'>
+<img src='backgroundExample.jpg' width='100%'>
 
 How to use
 -------------------------------
@@ -26,6 +26,7 @@ You can customize:
   <li>Categories</li>
   <li>Links</li>
   <li>Color palette</li>
+  <li>Dark/Light Themes</li>
   <li>Background and Welcome Message</li>
   </ul>
   
@@ -57,7 +58,7 @@ const card_colors = ['#28796B','#693273','#410E1A', '#7A94AB', '#D79052', '#2B2F
 ```
 
 ### For background and welcome message
-<img src="settings.jpg" width="100%">
+<img src="light-theme.jpg" width="100%">
 
 <a href='https://wallhaven.cc/w/45r5x9'>Source</a> for example background: 
 
