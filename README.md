@@ -3,6 +3,7 @@
 A minimal and colorful Touhou Project start page theme.
 <img src="Thumbnail.jpg" width="100%">
 <img src='backgroundExample.jpg' width='100%'>
+<a href='https://whvn.cc/4yk2pd'>Background sauce</a>
 
 How to use
 -------------------------------
