@@ -66,6 +66,7 @@ function getSettings() {
     message.value = localStorage.getItem('message');
     if (bg.value != '') {
         document.body.style.background = `url(${bg.value})`;
+        document.body.style.backgroundSize = `cover`;
         current_bg = `url(${bg.value})`;
     }
     if (message.value != '') {
@@ -119,6 +120,7 @@ bg.onchange = () => {
         }
     }
     document.body.style.background = current_bg;
+    document.body.style.backgroundSize = `cover`;
     localStorage.setItem("background", current_link);
 }
 
