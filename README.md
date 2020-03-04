@@ -18,7 +18,7 @@ How to use
 
 Customize
 -------------------------------
-Open up the script.js in your forked repo and begin messing with the links on the top of the document. It should be
+Open up the script.js in your forked repo's new gh-pages branch and begin messing with the links on the top of the document. It should be
 fairly straight forward from here.
 
 You can customize:
