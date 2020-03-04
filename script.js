@@ -72,6 +72,12 @@ function getSettings() {
     if (message.value != '') {
        document.getElementById('welcome-message').innerHTML = message.value;
     }
+    if (localStorage.getItem("theme") == 'dark') {
+        darkTheme();
+    }
+    if (localStorage.getItem("theme") == 'light') {
+        lightTheme();
+    }
 }
 
 let currentTheme = 'dark';
@@ -84,6 +90,7 @@ function darkTheme() {
     document.getElementById('welcome-message').style.color = card_colors[6];
     document.getElementById('welcome-message').style.textShadow = '4px 4px rgb(0, 0, 0, 0.3)';
     currentTheme = 'dark';
+    localStorage.setItem("theme", currentTheme);
 }
 
 function lightTheme() {
@@ -95,6 +102,7 @@ function lightTheme() {
     document.getElementById('welcome-message').style.color = card_colors[5];
     document.getElementById('welcome-message').style.textShadow =' 4px 0px rgb(255, 255, 255, 0.7)';
     currentTheme = 'light';
+    localStorage.setItem("theme", currentTheme);
 }
 
 showTitles();
