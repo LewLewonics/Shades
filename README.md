@@ -59,3 +59,5 @@ const card_colors = ['#28796B','#693273','#410E1A', '#7A94AB', '#D79052', '#2B2F
 ### For background and welcome message
 <img src="settings.jpg" width="100%">
 
+<a href='https://wallhaven.cc/w/45r5x9'>Source</a> for example background: 
+
