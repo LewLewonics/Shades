@@ -19,7 +19,8 @@ const category5_links = [`https://listen.moe`, `https://www.spotify.com/us/`, `h
 //In order of left -> right
 const categories = ['ソーシャル','アニメ','お気に入り','プログラミング','音楽'];
                                                                           //Background Color
-const card_colors = ['#28796B','#693273','#410E1A', '#7A94AB', '#D79052', '#2B2F3D']
+const card_colors = ['#28796B','#693273','#410E1A', '#7A94AB', '#D79052', '#2B2F3D', '#f3f3f3'];
+                                                                            //Dark  //Light
 //////////////////////////////////////////////////////////////////////////////////////////////
 
 let root = document.documentElement;
@@ -72,6 +73,29 @@ function getSettings() {
     }
 }
 
+let currentTheme = 'dark';
+function darkTheme() {
+    if (document.getElementById('bg').value == '') {
+        document.body.style.background = card_colors[5];
+        current_bg = card_colors[5];
+    }
+    document.getElementById('settings-btn').style.color = card_colors[6];
+    document.getElementById('welcome-message').style.color = card_colors[6];
+    document.getElementById('welcome-message').style.textShadow = '4px 4px rgb(0, 0, 0, 0.3)';
+    currentTheme = 'dark';
+}
+
+function lightTheme() {
+    if (document.getElementById('bg').value == '') {
+        document.body.style.background = card_colors[6];
+        current_bg = card_colors[6];
+    }
+    document.getElementById('settings-btn').style.color = card_colors[5];
+    document.getElementById('welcome-message').style.color = card_colors[5];
+    document.getElementById('welcome-message').style.textShadow =' 4px 0px rgb(255, 255, 255, 0.7)';
+    currentTheme = 'light';
+}
+
 showTitles();
 getSettings();
 
@@ -87,7 +111,12 @@ bg.onchange = () => {
     current_bg = `url(${bg.value})`;
     current_link = bg.value;
     if (bg.value == '') {
-        current_bg = card_colors[5];
+        if (currentTheme == 'dark') {
+            current_bg = card_colors[5];
+        }
+        if (currentTheme == 'light') {
+            current_bg = card_colors[6];
+        }
     }
     document.body.style.background = current_bg;
     localStorage.setItem("background", current_link);

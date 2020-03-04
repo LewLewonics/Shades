@@ -52,15 +52,21 @@
     </div>
     <div id="settings">
         <div id="center">
-            <h2>Settings</h2>
             <br>
             <br>
-            <h5>Background</h5>
+            <label for="background">Background</label><br>
             <input id='bg' type="text" placeholder="Your background URL here">
             <br>
             <br>
-            <h5>Welcome Message</h5>
+            <label for="message">Welcome Message</label><br>
             <input id='message' type="text" value='Solitude'>
+            <br>
+            <br>
+            <input id="b1" onclick="darkTheme()" type="radio" value="light theme" name='theme'>
+            <label for="dark-theme">Dark Theme</label><br>
+            <input id="b2" onclick="lightTheme()" type="radio" value="dark theme" name='theme'>
+            <label for="light-theme">Light Theme</label><br>
+            
         </div>
     </div>
 
