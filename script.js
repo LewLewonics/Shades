@@ -148,6 +148,7 @@ category1.onmouseenter = function() {
 
 category1.onmouseleave = function() {
     document.body.style.background = current_bg;
+    document.body.style.backgroundSize = `cover`;
     unblurImage('youmu-img');
     showTitles();
 }
@@ -162,6 +163,7 @@ category2.onmouseenter = function() {
 
 category2.onmouseleave = function() {
     document.body.style.background = current_bg;
+    document.body.style.backgroundSize = `cover`;
     unblurImage('suwako-img');
     showTitles();
 }
@@ -176,6 +178,7 @@ category3.onmouseenter = function() {
 
 category3.onmouseleave = function() {
     document.body.style.background = current_bg;
+    document.body.style.backgroundSize = `cover`;
     unblurImage('reimu-img');
     showTitles();
 }
@@ -190,6 +193,7 @@ category4.onmouseenter = function() {
 
 category4.onmouseleave = function() {
     document.body.style.background = current_bg;
+    document.body.style.backgroundSize = `cover`;
     unblurImage('marisa-img');
     showTitles();
 }
@@ -204,6 +208,7 @@ category5.onmouseenter = function() {
 
 category5.onmouseleave = function() {
     document.body.style.background = current_bg;
+    document.body.style.backgroundSize = `cover`;
     unblurImage('koishi-img');
     showTitles();
 }
