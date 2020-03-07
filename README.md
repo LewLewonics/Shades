@@ -2,8 +2,8 @@
 <a href='https://lewlewonics.github.io/Shades/'>Live Version</a>
 A minimal and colorful Touhou Project start page theme.
 <img src="Thumbnail.jpg" width="100%">
-<img src='backgroundExample.jpg' width='100%'>
-<a href='https://whvn.cc/4yk2pd'>Background sauce</a>
+<img src='custom.png' width='100%'>
+<a href='https://wallhaven.cc/w/96w8e8'>Background sauce</a>
 
 How to use
 -------------------------------
