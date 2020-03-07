@@ -140,13 +140,15 @@ message.onchange = () => {
 
 let category1 = document.getElementById("category1");
 category1.onmouseenter = function() {
-    document.body.style.background = card_colors[0];
+    document.getElementById('screen').style.background = card_colors[0];
+    document.getElementById('screen').style.opacity = '.7';
     blurImage('youmu-img');
     showLinks(category1_titles,category1_links);
     this.innerHTML = links;
 };
 
 category1.onmouseleave = function() {
+    document.getElementById('screen').style.opacity = '0';
     document.body.style.background = current_bg;
     document.body.style.backgroundSize = `cover`;
     unblurImage('youmu-img');
@@ -155,13 +157,15 @@ category1.onmouseleave = function() {
 
 let category2 = document.getElementById("category2");
 category2.onmouseenter = function() {
-    document.body.style.background = card_colors[1];
+    document.getElementById('screen').style.background = card_colors[1];
+    document.getElementById('screen').style.opacity = '.7';
     blurImage('suwako-img');
     showLinks(category2_titles,category2_links);
     this.innerHTML = links;
 };
 
 category2.onmouseleave = function() {
+    document.getElementById('screen').style.opacity = '0';
     document.body.style.background = current_bg;
     document.body.style.backgroundSize = `cover`;
     unblurImage('suwako-img');
@@ -170,13 +174,15 @@ category2.onmouseleave = function() {
 
 let category3 = document.getElementById("category3");
 category3.onmouseenter = function() {
-    document.body.style.background = card_colors[2];
+    document.getElementById('screen').style.background = card_colors[2];
+    document.getElementById('screen').style.opacity = '.7';
     blurImage('reimu-img');
     showLinks(category3_titles,category3_links);
     this.innerHTML = links;
 };
 
 category3.onmouseleave = function() {
+    document.getElementById('screen').style.opacity = '0';
     document.body.style.background = current_bg;
     document.body.style.backgroundSize = `cover`;
     unblurImage('reimu-img');
@@ -185,13 +191,15 @@ category3.onmouseleave = function() {
 
 let category4 = document.getElementById("category4");
 category4.onmouseenter = function() {
-    document.body.style.background = card_colors[3];
+    document.getElementById('screen').style.background = card_colors[3];
+    document.getElementById('screen').style.opacity = '.7';
     blurImage('marisa-img');
     showLinks(category4_titles,category4_links);
     this.innerHTML = links;
 };
 
 category4.onmouseleave = function() {
+    document.getElementById('screen').style.opacity = '0';
     document.body.style.background = current_bg;
     document.body.style.backgroundSize = `cover`;
     unblurImage('marisa-img');
@@ -200,13 +208,15 @@ category4.onmouseleave = function() {
 
 let category5 = document.getElementById("category5");
 category5.onmouseenter = function() {
-    document.body.style.background = card_colors[4];
+    document.getElementById('screen').style.background = card_colors[4];
+    document.getElementById('screen').style.opacity = '.7';
     blurImage('koishi-img');
     showLinks(category5_titles,category5_links);
     this.innerHTML = links;
 };
 
 category5.onmouseleave = function() {
+    document.getElementById('screen').style.opacity = '0';
     document.body.style.background = current_bg;
     document.body.style.backgroundSize = `cover`;
     unblurImage('koishi-img');

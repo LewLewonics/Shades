@@ -30,6 +30,12 @@ body {
     margin: 0;
 }
 
+#screen {
+    position: absolute;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
 button {
     position: absolute;
     top: 0;
